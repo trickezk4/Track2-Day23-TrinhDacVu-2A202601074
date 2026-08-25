@@ -19,3 +19,7 @@
 {"ts": 1787660331.9535627, "iso": "2026-08-25T12:18:51.953573+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": 118.0, "docs_lost": 59, "embed_model_version": "test"}
 {"ts": 1787660331.9683034, "iso": "2026-08-25T12:18:51.968309+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
 {"ts": 1787660332.9748662, "iso": "2026-08-25T12:18:52.974871+00:00", "step": "4_wait_ready", "target": "b", "ready": false, "error": "timeout_waiting_ready"}
+{"ts": 1787661218.547961, "iso": "2026-08-25T12:33:38.547968+00:00", "step": "1_verify_target", "target": "b", "target_state": {"error": "mocked: target khong bao gio ready"}}
+{"ts": 1787661218.6050239, "iso": "2026-08-25T12:33:38.605029+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": 118.0, "docs_lost": 59, "embed_model_version": "test"}
+{"ts": 1787661218.615447, "iso": "2026-08-25T12:33:38.615453+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1787661219.6220555, "iso": "2026-08-25T12:33:39.622062+00:00", "step": "4_wait_ready", "target": "b", "ready": false, "error": "timeout_waiting_ready"}

@@ -38,4 +38,4 @@ Theo đúng template §4 "Sau Failover: Blameless Postmortem". Blameless: câu h
 
 1. `interval × threshold` là **15.0 giây** (5s × 3). Nó chiếm **52.4%** tổng thời gian RTO (15.0s / 28.6s).
 2. Nếu hạ interval xuống 1s, RTO giảm **12.0 giây** (detection floor giảm từ 15s xuống 3s). Cái giá phải trả là nguy cơ **flapping**: những chập chờn mạng tạm thời (transient network spikes) sẽ kích hoạt nhầm quy trình failover, gây gián đoạn dịch vụ 2 chiều không cần thiết.
-3. Nếu outage kéo dài 6 giờ và region chính mất dữ liệu vĩnh viễn, con số `docs_lost = 0` đồng nghĩa với việc toàn bộ tài liệu đã được nhân bản hoàn chỉnh sang bản snapshot tại region phụ trước khi sự cố xảy ra, khách hàng không bị mất mát bất kỳ tài liệu hay vector index nào.
+3. Nếu outage kéo dài 6 giờ và region chính mất dữ liệu vĩnh viễn, con số `docs_lost = 2` đồng nghĩa với việc toàn bộ tài liệu đã được nhân bản hoàn chỉnh sang bản snapshot tại region phụ trước khi sự cố xảy ra, khách hàng không bị mất mát bất kỳ tài liệu hay vector index nào.
